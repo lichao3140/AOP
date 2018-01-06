@@ -9,7 +9,7 @@ import java.lang.annotation.Target;
  * Created by Administrator on 2018-01-06.
  */
 @Target(ElementType.METHOD)//注解用在那里
-@Retention(RetentionPolicy.CLASS)//注解用在代码的类型
+@Retention(RetentionPolicy.RUNTIME)//注解用在代码的类型
 public @interface BehaviorTrace {
     String value();
     int type();
